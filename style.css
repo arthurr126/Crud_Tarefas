@@ -1,0 +1,25 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.form-container {
+    max-width: 380px;
+    padding: 1rem;
+}
+
+.div_login {
+    background: var(--bs-body-bg);
+    border: 1px solid var(--bs-border-color);
+    border-radius: .75rem;
+    padding: 2rem 1.5rem;
+}
+
+.form-floating > .form-control:focus,
+.btn:focus-visible {
+    box-shadow: 0 0 0 .2rem rgba(var(--bs-primary-rgb), .35);
+}

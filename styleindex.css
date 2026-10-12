@@ -1,0 +1,37 @@
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.pagina-estreita {
+    max-width: 640px;
+}
+
+.topo {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.grade-tarefas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 1rem;
+}
+
+.tarefa {
+    border-left-width: 5px;
+}
+
+.prio-borda-baixa { border-left-color: var(--bs-success); }
+.prio-borda-media { border-left-color: var(--bs-warning); }
+.prio-borda-alta  { border-left-color: var(--bs-danger); }
+
+
+.btn-check:checked + .prio-baixa { background: var(--bs-success); border-color: var(--bs-success); color: #fff; }
+.btn-check:checked + .prio-media { background: var(--bs-warning); border-color: var(--bs-warning); color: #000; }
+.btn-check:checked + .prio-alta  { background: var(--bs-danger);  border-color: var(--bs-danger);  color: #fff; }
+
+.vazio {
+    border: 1px dashed var(--bs-border-color);
+    border-radius: .75rem;
+}
